@@ -9,7 +9,7 @@ pipeline
       {
         sh 'g++ main/cclab.cpp -o output'
         build 'PES2UG20CS900-1'
-        echo 'PES2UG20CS900 - Build Stage Successful'
+        echo 'Build Stage Successful'
       }
     }
     stage('Test')
@@ -17,7 +17,7 @@ pipeline
       steps 
       {
         sh '.output'
-        echo 'PES2UG20CS900 - Test Stage Successful'
+        echo 'Test Stage Successful'
       }
     }
     stage('Deploy') 
@@ -31,7 +31,7 @@ pipeline
       }
       steps 
       {
-        echo 'PES2UG20CS900 - Deployment Successful'
+        echo 'Deployment Successful'
       }
     }
   }
@@ -39,7 +39,7 @@ pipeline
   {
     failure 
     {
-      echo 'PES2UG20CS900 - Pipeline failed'
+      echo 'Pipeline failed'
     }
   }
 }
