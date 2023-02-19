@@ -3,7 +3,7 @@ pipeline{
   stages{
     stage('Build'){
       steps{
-        sh ' main/cclab.cpp -o output'
+        sudo sh ' main/cclab.cpp -o output'
         build 'PES2UG20CS266-1'
         echo 'Build Successfully!'
       }
