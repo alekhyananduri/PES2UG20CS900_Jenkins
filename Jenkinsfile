@@ -12,11 +12,11 @@ pipeline
         echo 'PES2UG20CS900 - Build Stage Successful'
       }
     }
-    stage('Test') \
+    stage('Test')
     {
       steps 
       {
-        sh '.output'
+        sh './output'
         echo 'PES2UG20CS900 - Test Stage Successful'
       }
     }
