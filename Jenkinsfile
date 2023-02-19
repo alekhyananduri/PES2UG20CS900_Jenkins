@@ -16,7 +16,7 @@ pipeline
     {
       steps 
       {
-        sh './output'
+        sh '.output'
         echo 'PES2UG20CS900 - Test Stage Successful'
       }
     }
@@ -26,7 +26,7 @@ pipeline
       {
         expression 
         {
-          currentBuild.result = null || currentBuild.result == 'SUCCESS' 
+          currentBuild.result == null || currentBuild.result == 'SUCCESS' 
         }
       }
       steps 
