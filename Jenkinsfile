@@ -16,7 +16,7 @@ pipeline
     {
       steps 
       {
-        sh './output'
+        sh '.output'
         echo 'Test Stage Successful'
       }
     }
